@@ -1,0 +1,53 @@
+.sidebar {
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -60px; /* Change left to right */
+    background-color: #333;
+    transition: right 0.3s ease; /* Change left to right */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar.open {
+    right: 0; /* Change left to right */
+  }
+  
+  .toggle-btn {
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 2; /* Ensure the button is on top of the sidebar */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  li:hover {
+    color: #28a745;
+  }
+  

@@ -1,0 +1,74 @@
+/* Sidebar.css */
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sidebar {
+  width: 690px;
+  max-width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FF66FF; /* Set the background color to #FF66FF */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+  position: relative;
+  overflow: hidden;
+  animation: fadeInScale 0.5s ease-in-out;
+}
+
+/* Add shine effect to the border */
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  background-size: 200% 100%;
+  animation: shine 1.5s linear infinite;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #714392;
+  border-radius: 5px;
+}

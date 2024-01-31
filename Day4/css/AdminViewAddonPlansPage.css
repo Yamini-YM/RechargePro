@@ -1,0 +1,68 @@
+/* AdminViewAddonPlansPage.css */
+
+@keyframes moveOutline {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  25% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.admin-view-addon-plans-container {
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5); /* Adjust the alpha for transparency */
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+}
+
+.addon-plans-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.addon-plan {
+  width: 32%; /* Set the width to 32% to allow three addon plans side by side */
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.addon-plan:hover {
+  transform: scale(1.03);
+}
+
+.addon-plan h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.addon-plan p {
+  color: whitesmoke;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .addon-plan {
+    width: 100%; /* Set to 100% width for smaller screens */
+  }
+}

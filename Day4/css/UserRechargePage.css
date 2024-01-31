@@ -1,0 +1,54 @@
+/* UserRechargePage.css */
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateShine {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 40px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.user-recharge-container {
+  max-width: 600px;
+  height: 400px;
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent background */
+  text-align: center;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInScale 0.5s ease-in-out; /* Apply the fadeInScale animation */
+}
+
+/* Add rotating outline effect */
+.user-recharge-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  /* background: linear-gradient(90deg, transparent, #fff, transparent); */
+  background-size: 200% 100%;
+  animation: rotateShine 3s linear infinite;
+  border-radius: 8px;
+}
