@@ -1,0 +1,39 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FF66FF;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  

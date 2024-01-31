@@ -1,0 +1,51 @@
+/* faq-styles.css */
+
+@keyframes moveOutline {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  25% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* White with 0.5 transparency */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+}
+
+h2 {
+  color: #333;
+}
+
+.faq-section {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: white;
+  line-height: 1.5;
+}

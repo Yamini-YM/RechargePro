@@ -1,0 +1,49 @@
+/* AdminViewRechargeHistoryPage.css */
+
+@keyframes moveOutline {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  25% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.admin-view-recharge-history-container {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5); /* Adjust the alpha for transparency */
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+}
+
+.recharge-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.recharge-history-table th,
+.recharge-history-table td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+  color: black;
+  background-color: rgba(242, 242, 242, 0.5); /* Adjust the alpha for transparency */
+}
+
+.recharge-history-table tbody tr:hover {
+  background-color: rgba(128, 128, 128, 0.5); /* Adjust the alpha for transparency */
+}

@@ -1,0 +1,88 @@
+/* AdminViewPlansPage.css */
+
+@keyframes shine {
+  to {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes moveOutline {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  25% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.admin-view-plans-container {
+  max-width: 800px;
+  padding: 20px;
+  height: 690px;
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+}
+
+/* Add shine effect to the box-shadow on hover */
+.admin-view-plans-container:hover {
+  animation: moveOutline 3s linear infinite, shine 1.5s linear infinite;
+}
+
+.plans-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plan {
+  width: 32%; /* Set the width to 32% to allow three plans side by side */
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+  transform: scale(1.03);
+}
+
+.plan h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  color: whitesmoke;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .plan {
+    width: 100%; /* Set to 100% width for smaller screens */
+  }
+}

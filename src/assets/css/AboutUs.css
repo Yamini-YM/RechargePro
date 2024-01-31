@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-container {
+  text-align: center;
+}
+
+.center-image-section {
+  margin-top: 20px;
+}
+
+.center-image {
+  max-width: 220px;
+  height: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.recharge-details-section {
+  margin-top: 20px;
+}
+
+.contact-section {
+  margin-top: 20px;
+}
+
+.contact-info {
+  text-align: left;
+}
