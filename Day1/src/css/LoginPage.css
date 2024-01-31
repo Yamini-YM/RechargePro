@@ -1,0 +1,72 @@
+/* LoginPage.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://img.freepik.com/free-vector/abstract-falling-lines-blue-background_78370-629.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-container {
+  max-height: 400px;
+  max-width: 400px;
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5); /* White with 0.5 transparency */
+  text-align: center;
+  margin: right 100px;
+  animation: moveOutline 3s linear infinite;
+}
+
+/* Add shine effect to the box-shadow on hover */
+.login-container:hover {
+  animation: moveOutline 3s linear infinite, shine 1.5s linear infinite;
+}
+
+h2 {
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #090d1f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
