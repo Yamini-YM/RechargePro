@@ -1,0 +1,82 @@
+/* Logout.css */
+
+@keyframes shine {
+    to {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  @keyframes moveOutline {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    25% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+    }
+    75% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  .logout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    animation: moveOutline 3s linear infinite;
+  }
+  
+  /* Add shine effect to the box-shadow on hover */
+  .logout-container:hover {
+    animation: moveOutline 3s linear infinite, shine 1.5s linear infinite;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .logout-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: brown;
+  }
+  
+  .modal {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 6px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 200px; /* Set the desired width */
+  }
+  
