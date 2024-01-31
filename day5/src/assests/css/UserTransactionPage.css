@@ -1,0 +1,115 @@
+/* UserTransactionPage.css */
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateShine {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 40px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.user-transaction-container {
+  width: 300px;
+height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInScale 0.5s ease-in-out;
+}
+
+.payment-type-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.payment-type-button {
+  flex: 1;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-type-button.selected {
+  background-color: #0056b3;
+}
+
+.proceed-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+  background-color: darkgreen;
+}
+/* UserTransactionPage.css */
+
+/* ... (previous styles) */
+
+.payment-type-selection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.payment-type-button {
+  flex: 1;
+  margin-bottom: 10px; /* Added margin to create space between the buttons */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-type-button.selected {
+  background-color: #0056b3;
+}
+
+.proceed-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+  background-color: darkgreen;
+}
