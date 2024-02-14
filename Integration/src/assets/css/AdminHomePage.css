@@ -1,0 +1,238 @@
+/* AdminHomePage.css */
+
+@keyframes shine {
+  to {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes moveOutline {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  25% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.admin-home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5); /* White with 0.5 transparency */
+  border-radius: 8px; /* Match the border-radius of your container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+}
+h2 {
+  color: whitesmoke;
+}
+
+.cta-section {
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+/* Add shine effect to the box-shadow on hover */
+.admin-home-container:hover {
+  animation: moveOutline 3s linear infinite, shine 1.5s linear infinite;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.admin-features {
+  display: flex;
+  justify-content: space-around;
+}
+
+.admin-feature {
+  max-width: 250px;
+}
+
+h2 {
+  color: brown;
+}
+.decorations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.decoration-item {
+  position: relative;
+  width: 340px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.decoration-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #ff80b3; /* Cute ribbon color */
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.decoration-item:hover {
+  transform: scale(1.05);
+}
+
+.decoration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+
+.admin-features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.admin-feature {
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95); /* Adjust the alpha (last) value for transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.admin-feature:hover {
+  transform: translateY(-5px);
+}
+
+.admin-feature h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.admin-feature p {
+  color: #555;
+}
+
+.admin-feature-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Add FontAwesome link in your HTML for icons */
+/* Example: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> */
+.admin-features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.admin-feature {
+  width: 250px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.admin-feature:hover {
+  transform: translateY(-10px);
+}
+
+.admin-feature h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.admin-feature p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.admin-feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* Add FontAwesome link in your HTML for icons */
+/* Example: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> */
+.decorations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.decoration-item {
+  width: 340px;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.decoration-item:hover {
+  transform: scale(1.05);
+}
+
+.decoration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}

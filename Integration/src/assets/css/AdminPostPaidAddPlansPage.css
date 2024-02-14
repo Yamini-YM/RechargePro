@@ -1,0 +1,29 @@
+/* AdminPostPaidAddPlansPage.css */
+
+.admin-postpaid-add-plans-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #d773c0, #714392);
+
+  }
+  
+  .plan-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .plan-detail {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .plan-detail h2 {
+    color: #333;
+  }
+  
+  .plan-detail p {
+    color: whitesmoke;
+  }
+  

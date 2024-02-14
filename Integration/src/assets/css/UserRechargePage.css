@@ -1,0 +1,56 @@
+/* UserRechargePage.css */
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateShine {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 40px rgba(255, 255, 255, 0.8);
+  }
+}
+/* Add this CSS to your existing styles or create a new CSS file */
+body {
+  overflow: hidden;
+}
+
+
+.user-recharge-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+  /* text-align: center; */
+  background: rgba(255, 255, 255, 0.5); /* White with 0.5 transparency */
+  border-radius: 8px; /* Match the border-radius of your container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Add rotating outline effect */
+.user-recharge-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  /* background: linear-gradient(90deg, transparent, #fff, transparent); */
+  background-size: 200% 100%;
+  animation: rotateShine 3s linear infinite;
+  border-radius: 8px;
+}

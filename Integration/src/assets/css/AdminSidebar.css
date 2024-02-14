@@ -1,0 +1,75 @@
+/* AdminSidebar.css */
+
+.admin-sidebar-container {
+  width: 60px;
+  height: 900px;
+  background: rgba(25, 48, 61, 0.5); /* Adjust the alpha (0.5) for transparency */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(20px); /* Adjust the blur intensity as needed */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Add a white shadow for the outline shine */
+}
+
+.admin-sidebar-container.open {
+  width: 200px;
+}
+
+.admin-toggle-btn {
+  font-size: 20px;
+  color: #fff;
+  background-color: #53587a72;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.admin-logo {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.admin-links {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.admin-sidebar-container.open .admin-logo,
+.admin-sidebar-container.open .admin-links {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.admin-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.admin-sidebar-container.open .admin-links a {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.admin-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}

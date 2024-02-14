@@ -1,0 +1,71 @@
+@keyframes moveOutline {
+  0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  25% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -20px 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.admin-page-container {
+ max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+  /* text-align: center; */
+  background: rgba(255, 255, 255, 0.5); /* White with 0.5 transparency */
+  border-radius: 8px; /* Match the border-radius of your container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+.admin-table-section {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 8px; /* Set border-radius for shiny outline */
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: black;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  th, td {
+      font-size: 14px;
+  }
+}

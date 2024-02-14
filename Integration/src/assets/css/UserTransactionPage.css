@@ -1,0 +1,14 @@
+.user-transaction-container {
+  /* max-width: 800px; */
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  animation: moveOutline 3s linear infinite;
+  /* text-align: center; */
+  background: rgba(255, 255, 255, 0.5); /* White with 0.5 transparency */
+  border-radius: 8px; /* Match the border-radius of your container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }

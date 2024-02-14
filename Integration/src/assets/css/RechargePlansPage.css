@@ -1,0 +1,66 @@
+/* RechargePlansPage.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://img.freepik.com/free-vector/abstract-falling-lines-blue-background_78370-629.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  height: 100vh;
+}
+
+.recharge-plans-container {
+  max-width: 800px;
+  max-height: 780px;
+  
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5); /* Adjust the values for the desired transparency */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto; /* Center the columns */
+}
+
+.plan-item {
+  flex: 1 1 calc(50% - 20px); /* Two items in each row */
+  margin: 10px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
